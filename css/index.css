@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
 }
 h1,
 h2,
@@ -142,6 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  color: #212529;
 }
 h1 {
   font-size: 4rem;
@@ -172,18 +174,26 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  color: #212529;
+  margin-top: 1em;
   padding-bottom: 2em;
-  border-bottom: grey 1px dashed;
+  border-bottom: #C0C0C0 1.5px dashed;
 }
-nav a {
-  display: flex;
-  margin-top: 1.5em;
-  vertical-align: 2em;
+@media a {
+  nav {
+    display: flex;
+    margin-top: 1.5em;
+    vertical-align: 2em;
+    padding-right: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #212529;
+  }
 }
 nav .logo {
-  display: flex;
-  justify-content: flex-start;
-  margin-right: 470px;
+  text-align: left;
+  padding-left: 0.5em;
+  margin-right: 450px;
 }
 .footer {
   width: 100%;
@@ -195,6 +205,11 @@ nav .logo {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.cta {
+  margin-top: 2em;
+  padding-bottom: 1em;
+  border-bottom: #C0C0C0 1.5px dashed;
 }
 .home .content-section {
   margin: 30px 0;
@@ -241,4 +256,17 @@ nav .logo {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  padding: 18px;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #C0C0C0 1px solid;
+  border-radius: 14px;
+  color: #FFFFFF;
+  font-size: 17px;
 }
