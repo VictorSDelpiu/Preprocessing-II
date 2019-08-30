@@ -1,3 +1,4 @@
+/*Media Quieres */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,35 +171,62 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: #212529;
-  margin-top: 1em;
-  padding-bottom: 2em;
-  border-bottom: #C0C0C0 1.5px dashed;
-}
-@media a {
-  nav {
-    display: flex;
-    margin-top: 1.5em;
-    vertical-align: 2em;
-    padding-right: 6px;
-    text-decoration: none;
-    font-size: 13px;
-    color: #212529;
+@media (max-width: 515px) {
+  .container {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
-nav .logo {
-  text-align: left;
-  padding-left: 0.5em;
-  margin-right: 450px;
+header {
+  width: 100;
+}
+@media (max-width: 515px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+nav {
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  color: #212529;
+  margin-bottom: 20px;
+  margin-top: -3em;
+  vertical-align: 2em;
+  text-align: right;
+}
+@media (max-width: 515px) {
+  nav {
+    align-self: center;
+    align-items: center;
+  }
+}
+@media (max-width: 515px) and (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+}
+nav a {
+  display: flex;
+  padding-right: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #212529;
 }
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
+}
+@media (max-width: 515px) {
+  .footer {
+    width: 100%;
+    margin-right: 2em;
+    padding-right: 1em;
+  }
 }
 .footer p {
   text-align: center;
